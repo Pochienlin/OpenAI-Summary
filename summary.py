@@ -33,9 +33,10 @@ from pytesseract import pytesseract
 # For file management
 import os
 import glob
+from pathlib import Path
 
 ###      ----SETTINGS----
-DIRECTORY = "/Users/pochienlin/Desktop/OpenAI Summary"
+DIRECTORY = str(Path.cwd())
 path_to_tesseract = r'/usr/local/bin/tesseract'
 # Use a check dir line to create an image file if it doesn't exist yet?
 
